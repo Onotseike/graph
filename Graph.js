@@ -3,7 +3,7 @@
 //Graph class
 
 var graph = {
-    nodes: [1],
+    nodes: [],
     edges: [],
     pos_lines: [],
     //Add a single node.
@@ -69,12 +69,12 @@ var graph = {
             var ctx = can.getContext("2d");
             var ctx = can.getContext("2d");
             ctx.beginPath();
-            ctx.clearRect(0, 0, 800, 800);
+            //ctx.clearRect(0, 0, 800, 800);
             ctx.fillStyle = "#FF0000"
-            ctx.arc(px, py, 20, 0, 2 * Math.PI);
+            ctx.arc(px, py, 15, 0, 2 * Math.PI);
 
             ctx.stroke();
-            ctx.font = "20px Arial";
+            ctx.font = "15px Arial";
             ctx.fillText(this.nodes[id], px, py);
 
         }
